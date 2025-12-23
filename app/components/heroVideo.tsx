@@ -29,7 +29,7 @@ export default function HeroVideo() {
             The A220
           </h1>
           <p className="mt-4 text-xl opacity-90 text-left">
-            The future of short- to medium-haul flight
+            The future of short to medium-haul flight
           </p>
         </motion.div>
       </div>
