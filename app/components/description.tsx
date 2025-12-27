@@ -16,7 +16,7 @@ export default function description() {
         >
           {/* LEFT SIDE */}
           <div>
-            <p className="uppercase tracking-wider text-sm">
+            <p className="uppercase tracking-wider text-sm" id="about">
               Here&apos;s the deal
             </p>
 
@@ -70,7 +70,7 @@ export default function description() {
         >
           {/* LEFT SIDE */}
           <div>
-            <p className="uppercase tracking-wider text-sm">
+            <p className="uppercase tracking-wider text-sm" id="history">
               Now for some background
             </p>
 
