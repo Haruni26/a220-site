@@ -1,1 +1,1 @@
-In heavy development
+Created using Nextjs and Tailwind CSS
