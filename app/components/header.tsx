@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Logo from "../../public/images/logo.svg";
 import { Menu, X } from "lucide-react";
+import Link from "next/link";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -20,7 +21,9 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
-          <Image src={Logo} alt="Airbus Logo" width={160} priority />
+          <Link href="/">
+            <Image src={Logo} alt="Airbus Logo" width={160} priority />
+          </Link>
         </div>
 
         {/* Desktop Nav */}

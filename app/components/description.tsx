@@ -3,24 +3,25 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-export default function description() {
+export default function Description() {
   return (
     <>
-      <section className="py-24" id="about">
+      {/* -------- ABOUT -------- */}
+      <section className="py-20" id="about">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="mx-auto max-w-7xl px-6 grid grid-cols-1 md:grid-cols-2 gap-12"
+          className="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16"
         >
-          {/* LEFT SIDE */}
+          {/* LEFT */}
           <div>
             <p className="uppercase tracking-wider text-sm">
               Here&apos;s the deal
             </p>
 
-            <h2 className="mt-3 text-5xl md:text-6xl font-bold leading-tight text-[#4b8ae1]">
+            <h2 className="mt-3 text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-[#4b8ae1]">
               Engineered for
               <br />
               performance
@@ -31,16 +32,16 @@ export default function description() {
             <div className="mt-6 h-2 w-12 bg-[#4b8ae1] rounded" />
           </div>
 
-          {/* RIGHT SIDE */}
-          <div className="space-y-6 text-lg leading-relaxed">
+          {/* RIGHT */}
+          <div className="space-y-6 text-base sm:text-lg leading-relaxed max-w-2xl">
             <p>
               Built for the{" "}
-              <strong className="text-[#4b8ae1]">100-160 seat</strong> aircraft
+              <strong className="text-[#4b8ae1]">100–160 seat</strong> aircraft
               category, the A220 Family offers a{" "}
               <strong className="text-[#4b8ae1]">
                 latest-generation design, advanced materials
-              </strong>
-              , and Airbus&apos; signature{" "}
+              </strong>{" "}
+              and Airbus&apos; signature{" "}
               <strong className="text-[#4b8ae1]">
                 passenger-first approach
               </strong>
@@ -49,76 +50,75 @@ export default function description() {
 
             <p>
               Panoramic windows, the widest single-aisle cabin and seats in its
-              class. The A220 combines big jet comfort with small jet
-              efficiency. Offering{" "}
+              class — the A220 combines big-jet comfort with small-jet
+              efficiency. It offers a{" "}
               <strong className="text-[#4b8ae1]">
                 25% reduction in CO₂ emissions per seat
               </strong>{" "}
               and a{" "}
               <strong className="text-[#4b8ae1]">
                 50% smaller noise footprint
-              </strong>{" "}
-              than previous generation aircraft, the A220 brings a{" "}
-              <strong className="text-[#4b8ae1]">
-                quieter and roomier way to fly
               </strong>
               .
             </p>
 
             <p>
-              Short trips, long regional route, or international flight, the
-              A220 delivers{" "}
+              Whether flying short hops or long regional routes, the A220
+              delivers{" "}
               <strong className="text-[#4b8ae1]">
                 unmatched operational flexibility
               </strong>
-              , making it a favourite among airlines and a standout choice for
-              passengers.
+              .
             </p>
           </div>
         </motion.div>
       </section>
 
-      {/* ---- SECOND SECTION ---- */}
-      <section className="py-24" id="history">
+      {/* -------- HISTORY -------- */}
+      <section className="py-20" id="history">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="mx-auto max-w-7xl px-6 grid grid-cols-1 md:grid-cols-2 gap-12"
+          className="max-w-6xl mx-auto px-4 sm:px-6 space-y-12"
         >
-          {/* LEFT SIDE */}
-          <div>
-            <p className="uppercase tracking-wider text-sm">
-              Now for some background
-            </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
+            {/* LEFT */}
+            <div>
+              <p className="uppercase tracking-wider text-sm">
+                Now for some background
+              </p>
 
-            <h2 className="mt-3 text-5xl md:text-6xl font-bold leading-tight text-white">
-              From the
-              <br />
-              <span className="bg-linear-to-br from-white to-red-500 bg-clip-text text-transparent">
-                Great White
-              </span>
-              <br />
-              <span className="text-red-500">North</span>
-            </h2>
+              <h2 className="mt-3 text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-white">
+                From the
+                <br />
+                <span className="bg-linear-to-br from-white to-red-500 bg-clip-text text-transparent">
+                  Great White
+                </span>
+                <br />
+                <span className="text-red-500">North</span>
+              </h2>
 
-            <div className="mt-6 h-2 w-12 bg-[#4b8ae1] rounded" />
-          </div>
-          {/* RIGHT SIDE */}
-          <div className="space-y-6 text-lg leading-relaxed">
-            <div className="max-w-6xl mx-auto px-6 py-16">
-              <Image
-                src="/images/c-series.png"
-                width={500}
-                height={600}
-                alt="C-100 Taking Off"
-                className="rounded-2xl shadow-lg object-contain"
-              />
+              <div className="mt-6 h-2 w-12 bg-[#4b8ae1] rounded" />
+            </div>
+
+            {/* RIGHT — IMAGE */}
+            <div className="flex justify-center md:justify-end">
+              <div className="relative w-full max-w-md">
+                <Image
+                  src="/images/c-series.png"
+                  width={500}
+                  height={600}
+                  alt="C-Series Taking Off"
+                  className="rounded-2xl shadow-lg object-contain"
+                />
+              </div>
             </div>
           </div>
 
-          <div className="space-y-6 w-7xl text-md">
+          {/* TEXT */}
+          <div className="space-y-6 text-base sm:text-lg leading-relaxed">
             <p>
               The Airbus A220 began life as the Bombardier CSeries, a bold
               Canadian effort to design a brand-new jet optimized for the
@@ -170,11 +170,18 @@ export default function description() {
           </div>
         </motion.div>
 
-        {/* Pictures */}
-        <div className="max-w-6xl mx-auto px-6 py-20">
-          <div className="grid md:grid-cols-2 gap-12 items-start">
-            {/* LEFT — stacked images */}
-            <div className="space-y-10">
+        {/* -------- SPECS -------- */}
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          id="specs"
+          className="max-w-6xl mx-auto px-4 sm:px-6 py-20"
+        >
+          <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-start">
+            {/* LEFT — IMAGES */}
+            <div className="space-y-8">
               <Image
                 src="/images/a220-100-blueprint.png"
                 width={800}
@@ -191,8 +198,8 @@ export default function description() {
               />
             </div>
 
-            {/* RIGHT — specs */}
-            <div className="space-y-12 self-start">
+            {/* RIGHT — SPECS */}
+            <div className="space-y-10">
               <div>
                 <h3 className="text-2xl font-semibold mb-4">
                   A220-100 Specifications
@@ -222,7 +229,7 @@ export default function description() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
     </>
   );

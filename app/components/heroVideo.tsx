@@ -47,7 +47,10 @@ export default function HeroVideo() {
 
         <div className="absolute inset-0 bg-black/50" />
 
-        <div className="relative z-10 flex h-full items-center justify-center text-center text-white">
+        <div
+          className="relative z-10 flex h-full items-center justify-center text-center text-white"
+          id="/"
+        >
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
